@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Grocery Inventory</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🛒 Grocery Inventory System</h1>
+
+    <div class="card">
+      <h2>Add Item</h2>
+      <input type="text" id="name" placeholder="Item Name" />
+      <input type="text" id="barcode" placeholder="Barcode" />
+      <input type="number" id="price" placeholder="Price" />
+      <input type="number" id="quantity" placeholder="Quantity" />
+      <button onclick="addItem()">Add</button>
+    </div>
+
+    <div class="card">
+      <h2>Search Item</h2>
+      <input type="text" id="searchBarcode" placeholder="Barcode" />
+      <button onclick="searchItem()">Search</button>
+      <div id="searchResult"></div>
+    </div>
+
+    <div class="card">
+      <h2>Update Quantity</h2>
+      <input type="text" id="updateBarcode" placeholder="Barcode" />
+      <input type="number" id="newQuantity" placeholder="New Quantity" />
+      <button onclick="updateQuantity()">Update</button>
+    </div>
+
+    <div class="card">
+      <h2>Inventory</h2>
+      <button onclick="displayAllItems()">Show All</button>
+      <div id="inventoryList"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
